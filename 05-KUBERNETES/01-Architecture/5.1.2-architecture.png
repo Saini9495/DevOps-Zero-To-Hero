@@ -1,0 +1,35 @@
+                    Kubernetes Cluster
+
+      ┌────────────────────────────────────┐
+      │           Control Plane            │
+      │                                    │
+      │  API Server                        │
+      │  Scheduler                         │
+      │  Controller Manager                │
+      │  ETCD                              │
+      └────────────────────────────────────┘
+
+                    │
+                    │
+
+      ┌────────────────────────────────────┐
+      │           Worker Node 1            │
+      │                                    │
+      │  Kubelet                           │
+      │  Kube Proxy                        │
+      │  Container Runtime                 │
+      │  Pod A                             │
+      │  Pod B                             │
+      └────────────────────────────────────┘
+
+                    │
+
+      ┌────────────────────────────────────┐
+      │           Worker Node 2            │
+      │                                    │
+      │  Kubelet                           │
+      │  Kube Proxy                        │
+      │  Container Runtime                 │
+      │  Pod C                             │
+      │  Pod D                             │
+      └────────────────────────────────────┘
